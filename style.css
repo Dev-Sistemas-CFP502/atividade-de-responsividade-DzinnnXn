@@ -155,14 +155,13 @@ p {
 }
 
 /* Tablet */
-@media screen and (max-width: 992px) and (min-width: 601px){
+@media screen and (max-width: 992px){
   .vantagens{
     flex-direction: column;
   }
 }
 
-/* Celular */
-@media screen and (max-width:600px) and (min-width:321px){
+@media screen and (max-width:600px){
   nav{
       flex-direction: column;
   }
@@ -186,7 +185,11 @@ p {
 
   .vantagens-titulo{
     padding-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .vantagens-lista{
+    font-size: 1.4rem;
   }
 
   .menu ul{
@@ -200,7 +203,7 @@ p {
 
 @media screen and (max-width: 320px){
   .header{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .introducao h2{
@@ -212,18 +215,26 @@ p {
   }
 
   .vantagens-titulo{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .vantagens-lista{
     font-size: 1rem;
   }
 
-  .rodape{
-    font-size: 0.1rem;
+  .botao{
+    font-size: 0.6rem;
+    border-radius: 3.5rem;
   }
 
-  .botao{
-    font-size: 0.9rem;
+  .rodape{
+    font-size: 01rem;
   }
+
+  .vantagens{
+    font-size: 1rem;
+  }
+
 }
+
+
