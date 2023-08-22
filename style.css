@@ -9,13 +9,11 @@
 }
 
 body {
-
   font-family: Arial, Helvetica, sans-serif;
   background-color: #111;
   padding: 1rem;
   color: #fff
 }
-
 
 p {
   font-size: 1.25rem;
@@ -36,6 +34,7 @@ p {
 }
 
 .menu a {
+  max-width: 100%;
   display: block;
   background: #222;
   color: #fff;
@@ -66,7 +65,6 @@ p {
   align-items: center;
   background-color: #111111;
   padding: 1rem;
-  
 }
 
 .introducao-img::-webkit-scrollbar {
@@ -78,11 +76,17 @@ p {
   border-radius: 5px;
 }
 
-
-
 .introducao-img img{
     height: 25rem;
+}
 
+.introducao-img{
+  max-width: 18rem;
+  max-height: 600px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+  cursor: pointer;
 }
 
 .introducao h2 {
@@ -120,7 +124,6 @@ p {
   letter-spacing: 2px;
   background: url(./img/onda.svg);
   color: #ffbb00;
-
 }
 
 .vantagens-lista{
@@ -138,6 +141,7 @@ p {
   margin: 10px 0;
   font-size: 1.4rem;
 }
+
 .rodape {
   width: 100%;
   text-align: center;
@@ -150,3 +154,84 @@ p {
   font-size: 2rem;
 }
 
+/* Tablet */
+@media screen and (max-width: 992px){
+  .vantagens{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:600px){
+  nav{
+      flex-direction: column;
+  }
+
+  article{
+    flex-direction: column;
+    display: flex;
+  }
+
+  .introducao h2{
+    font-size: 3rem;
+  }
+
+  .introducao p{
+    font-size: 1.5rem;
+  }
+
+  .conteudo{
+    flex-direction: column;
+  }
+
+  .vantagens-titulo{
+    padding-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .vantagens-lista{
+    font-size: 1.4rem;
+  }
+
+  .menu ul{
+    flex-direction: column;
+  }
+
+  .rodape{
+    font-size: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .header{
+    font-size: 1.4rem;
+  }
+
+  .introducao h2{
+    font-size: 2rem;
+  }
+
+  .introducao p{
+    font-size: 1rem;
+  }
+
+  .vantagens-titulo{
+    font-size: 1.2rem;
+  }
+
+  .vantagens-lista{
+    font-size: 1rem;
+  }
+
+  .botao{
+    font-size: 0.6rem;
+    border-radius: 3.5rem;
+  }
+
+  .rodape{
+    font-size: 1rem;
+  }
+
+  .vantagens{
+    font-size: 1rem;
+  }
+}
