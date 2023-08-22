@@ -173,8 +173,12 @@ p {
     flex-direction: column;
   }
 
+  .vantagens-titulo{
+    padding-top: 1rem;
+    font-size: 1.8rem;
+  }
+
   .menu ul{
     flex-direction: column;
   }
-  
 }
